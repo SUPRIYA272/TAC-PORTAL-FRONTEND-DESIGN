@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+	background-image: url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-63480.jpg");
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+.container {
+    text-align: left;
+}
+
+form {
+    border: 1px solid #3b84bf3a;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+	background-color: #3f464e37;
+	text-align: left;
+	box-shadow: black;
+	height: 200px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+	margin-top: 20px;
+
+}
+.error {
+    color: red; /* Set error message color to red */
+    font-size: 14px;
+}

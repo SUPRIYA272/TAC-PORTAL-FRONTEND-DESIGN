@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Apply TAC</title>
+    <link rel="stylesheet" href="apply.css">
+   </head>
+  <body>
+   
+  
+
+    <form id="tac-form">
+      <h1>APPLY TAC</h1>
+      <button class="logout-button" onclick="location.href='student.html';">Logout</button>
+      <label for="project-category">Project Category:</label>
+      <select id="project-category">
+        <option value="hardware">Hardware</option>
+        <option value="software">Software</option>
+      </select>
+      
+      <div id="hardware-skills" style="display: none;">
+        <label for="hardware-skills-set">Skill Set:</label>
+        <input type="text" id="hardware-skills-set" name="hardware-skills-set" />
+      </div>
+
+      <div id="software-skills" style="display: none;">
+        <label for="software-skills-set">Skill Set:</label>
+        <input type="text" id="software-skills-set" name="software-skills-set" />
+      </div>
+      <div class="form-group" id="skillSetFields">
+        <!-- Skill set options dynamically populated based on project category -->
+    </div>
+      <label for="project-title">Project Title:</label>
+      <input type="text" id="project-title" name="project-title" />
+
+      <label for="no-of-students">Number of Students:</label>
+      <input type="number" id="no-of-students" name="no-of-students" min="1" max="5" />
+
+      <div id="student-details" style="display: none;">
+        <div id="student-1">
+          <label for="student-1-name">Student 1 Name:</label>
+          <input type="text" id="student-1-name" name="student-1-name" />
+
+          <label for="student-1-roll-no">Student 1 Roll No:</label>
+          <input type="text" id="student-1-roll-no" name="student-1-roll-no" />
+
+          <label for="student-1-skills">Student 1 Skills:</label>
+          <select id="student-1-skills" name="student-1-skills">
+            <option value="skill-1"></option>
+            <option value="skill-2">Skill 2</option>
+            <option value="skill-3">Skill 3</option>
+            <option value="skill-4">Skill 4</option>
+            <option value="skill-5">Skill 5</option>
+            <option value="skill-6">Skill 6</option>
+          </select>
+        </div>
+      </div>
+
+      <label for="list-of-components">List of Components:</label>
+      <select id="list-of-components" name="list-of-components">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <div id="components-attachment" style="display: none;">
+        <label for="components-attachment-file">Components Attachment:</label>
+        <input type="file" id="components-attachment-file" name="components-attachment-file" accept=".xlsx" />
+      </div>
+
+      <label for="initial-project-description">Initial Project Description:</label>
+      <input type="file" id="initial-project-description-file" name="initial-project-description-file" accept=".pdf" />
+
+      <label for="current-date">Current Date:</label>
+      <input type="date" id="current-date" name="current-date" />
+
+      <input type="submit" value="Apply TAC" />
+     
+    </form>
+    <script src="apply.js"></script>
+</body>
+</html>

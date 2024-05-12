@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    background-image: url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-63480.jpg");
+    height: 100vh; /* Set background image height to 100% of viewport height */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif; /* Set a fallback font family */
+}
+main {
+    margin-left: 20px;
+    margin-right: 20px; /* Remove extra semicolon here */
+}
+
+h1 {
+    text-align: center;
+    color:black;
+   
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Add spacing between header and container */
+}
+
+.role-box {
+    width: 300px; /* Adjust width as needed */
+    height: 350; /* Allow height to adjust based on content */
+    background-color: #1f64bf49;
+    border: 2px solid #cccccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    cursor: pointer;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.role-box.selected {
+    border-color: #007bff;
+    transform: scale(1.05);
+}
+
+.hidden-checkbox {
+    display: none;
+}
+
+.role-box img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.role-box p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    margin: 0;
+}
+

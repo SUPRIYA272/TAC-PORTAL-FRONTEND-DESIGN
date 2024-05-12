@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image:url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-63480.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#tac-form {
+  width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff62;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.74);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+select,
+  input[type="text"],
+  input[type="file"] {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #b9b8b8;
+    border-radius: 4px;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+.logout-button{
+  padding: 10px 20px;
+  background-color: #3976d2a1;
+  color: #0b0505;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 400px; /* Adjust this value as needed */
+}
+
+.logout-button:hover {
+  display: flex;
+  justify-content: flex-end; /* Aligns button to the right */
+  margin-top: 20px; /* Optional margin adjustment */
+}

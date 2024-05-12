@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+</head>
+<body>
+    <header>
+        <h1>DASHBOARD</h1>
+        <button class="logout-button" onclick="location.href='teacher.html';">Logout</button>
+    </header>
+    <aside>
+        <label for="domain-select">SELECT DOMAIN:</label>
+        <select id="domain-select">
+            <option value="hardware">HARDWARE</option>
+            <option value="software">SOFTWARE</option>
+        </select>
+    </aside>
+    
+    <main id="dashboard" class="box-container">
+        <div class="box" id="initialized-box">
+            <h2>NO. OF TAC INITIALIZED</h2>
+            <div class="value" id="initialized-value">0</div>
+        </div>
+        <div class="box" id="rejected-box">
+            <h2>NO. OF TAC REJECTED</h2>
+            <div class="value" id="rejected-value">0</div>
+        </div>
+        <div class="box" id="approved-box">
+            <h2>NO. OF TAC APPROVED</h2>
+            <div class="value" id="approved-value">0</div>
+        </div>
+    </main>
+
+    <script src="dash.js"></script>
+</body>
+</html>

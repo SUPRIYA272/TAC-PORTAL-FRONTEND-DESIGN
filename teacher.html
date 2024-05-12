@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Login</title>
+    <link rel="stylesheet" href="teacher.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>FACULTY LOGIN</h2>
+        <form id="loginForm">
+            <div>
+                <label for="facultyId">Faculty ID:</label>
+                <input type="text" id="facultyId" maxlength="4" required>
+				<span id="facultyIdError" class="error"></span><br>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" maxlength="5" required>
+				<span id="passwordError" class="error"></span><br>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <p id="errorMessage" class="error-message"></p>
+    </div>
+
+    <script src="teacher.js"></script>
+</body>
+</html>

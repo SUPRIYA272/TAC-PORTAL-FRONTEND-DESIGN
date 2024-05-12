@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    background-image: url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-63480.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif; /* Set a fallback font family */
+
+}    
+* {
+    box-sizing: border-box;
+  }
+  /* Style the header */
+header {
+    background-color:#31323258;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(26, 22, 22);
+    height: 100px;
+  }
+  
+  /* Container for flexboxes */
+  section {
+    display: -webkit-flex;
+    display: flex;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #6f8eed2a;
+    height: 100vh;
+  }
+  
+  li a {
+    display: block;
+    color: #0a0a0b;
+    padding: 25px 20px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color on hover */
+  li a:hover {
+    background-color: #689ad031;
+    color: rgb(9, 8, 8);
+  }
+  /* Style the content */
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    padding: 10px;
+    max-width: 500px;
+    justify-content: center;
+
+  }
+  
+  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
